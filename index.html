@@ -1,16 +1,34 @@
 <html>
-    <head>
+
+<head>
     <script src="script.js"></script>
+    <title>Web App – Simple Interest Calculator</title>
     <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
+</head>
+
+<body>
+    <div class="calc">
         <h1>Simple Interest Calculator</h1>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+        <label> Amount</label> <input type="number" id="principal">
+        <label> Rate</label> <input type="range" min="1" max="20" step=".1" id="rate" oninput="changeVal()"><span id="val">10.5%</span>
+        <label>NO. of Years</label> <select name="time" id="years">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+        <label> Interest :</label> <span id="result"></span><br>
 
-        <button onclick="compute()">Compute</button>
-    </body>
+        <button onclick="compute()" class="btn">Compute</button>
+        <footer>&copy;2021, Made by Rathod kishan</footer>
+    </div>
+</body>
+
 </html>
