@@ -1,4 +1,70 @@
-body {background-color:tan;}
-h1{color:green;}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
 
+body {
+    background-color: tan;
+    outline: none;
+}
 
+h1 {
+    color: green;
+    grid-column: 1/4;
+}
+
+#principal,
+#years {
+    grid-column: 2/4;
+}
+
+#years {
+    width: 30%;
+}
+
+#val {
+    margin-left: 15px;
+}
+
+.calc {
+    width: 36%;
+    margin: 25vh auto;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 6px;
+}
+
+.btn {
+    width: 18vh;
+    height: 5vh;
+    font-size: larger;
+    grid-column: 1/4;
+    justify-self: center;
+}
+
+label,
+input,
+span,
+select {
+    font-size: larger;
+    height: 25px;
+}
+
+input,
+select,
+.btn {
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+footer {
+    grid-column: 1/4;
+    font-size: larger;
+    justify-self: center;
+}
